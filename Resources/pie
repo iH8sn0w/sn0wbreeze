@@ -1,0 +1,5 @@
+#!/bin/bash
+
+shopt -s nullglob
+echo "Animate: running"; ./usr/bin/animate; echo "Animate: Done"; echo " "; echo "Booting back to launchd..."; exec /sbin/crunchy
+

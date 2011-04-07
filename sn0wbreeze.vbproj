@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAC3A748-66F4-4205-A9D1-ABE0F470E53B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>sn0wbreeze.My.MyApplication</StartupObject>
+    <RootNamespace>sn0wbreeze</RootNamespace>
+    <AssemblyName>sn0wbreeze</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>620DEFC90156282038778D2BFE45709F56CB354A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>sn0wbreeze 3.1.2_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>Snowflake.ico</ApplicationIcon>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <TargetZone>LocalIntranet</TargetZone>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <PublishUrl>C:\Users\Scott\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>sn0wbreeze</ProductName>
+    <PublisherName>iH8sn0w</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>sn0wbreeze.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>sn0wbreeze.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningLevel>0</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.7.2.3, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ICSharpCode.SharpZipLib.BZip2" />
+    <Import Include="ICSharpCode.SharpZipLib.GZip" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check4Updates.Designer.vb">
+      <DependentUpon>Check4Updates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Check4Updates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFU.Designer.vb">
+      <DependentUpon>DFU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="done.Designer.vb">
+      <DependentUpon>done.vb</DependentUpon>
+    </Compile>
+    <Compile Include="done.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ebootlogos.Designer.vb">
+      <DependentUpon>ebootlogos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ebootlogos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ebuilding.Designer.vb">
+      <DependentUpon>ebuilding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ebuilding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ecustomapps.Designer.vb">
+      <DependentUpon>ecustomapps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ecustomapps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eunlock.designer.vb">
+      <DependentUpon>eunlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="eunlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdentifyIPSW.Designer.vb">
+      <DependentUpon>IdentifyIPSW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IdentifyIPSW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expert.Designer.vb">
+      <DependentUpon>Expert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Expert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="egeneral.Designer.vb">
+      <DependentUpon>egeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="egeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fail.Designer.vb">
+      <DependentUpon>Fail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMode.Designer.vb">
+      <DependentUpon>SelectMode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iDetector.Designer.vb">
+      <DependentUpon>iDetector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iDetector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iDevWarn.Designer.vb">
+      <DependentUpon>iDevWarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iDevWarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViewHeader.vb" />
+    <Compile Include="MDIMain.Designer.vb">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modFile.vb" />
+    <Compile Include="modIPSW.vb" />
+    <Compile Include="ModListViewSorter.vb" />
+    <Compile Include="ModMain.vb" />
+    <Compile Include="modProcessCmd.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="xpwn.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="done.resx">
+      <DependentUpon>done.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebootlogos.resx">
+      <DependentUpon>ebootlogos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ebuilding.resx">
+      <DependentUpon>ebuilding.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ecustomapps.resx">
+      <DependentUpon>ecustomapps.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifyIPSW.resx">
+      <DependentUpon>IdentifyIPSW.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expert.resx">
+      <DependentUpon>Expert.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="egeneral.resx">
+      <DependentUpon>egeneral.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMode.resx">
+      <DependentUpon>SelectMode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMain.resx">
+      <DependentUpon>MDIMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrowgray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrowhilite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrowpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iPhone3GS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flakeselect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reflectionImage2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinny.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BootLogosHighLight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BootLogosNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildHighlight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuildNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomPKGHighLight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomPKGNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeneralHighlight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeneralNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstallerHighlight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstallerNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNLOCKHighLight1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNLOCKNorm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cydia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\sn0wflak3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resources.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Check4Updates.resx">
+      <DependentUpon>Check4Updates.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFU.resx">
+      <DependentUpon>DFU.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eunlock.resx">
+      <DependentUpon>eunlock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fail.resx">
+      <DependentUpon>Fail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iDetector.resx">
+      <DependentUpon>iDetector.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iDevWarn.resx">
+      <DependentUpon>iDevWarn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BootLogo.png" />
+    <EmbeddedResource Include="Resources\debs.zip" />
+    <EmbeddedResource Include="Resources\AppleTV2,1_4.3_8F202.bundle.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\animate.deb" />
+    <EmbeddedResource Include="Resources\animate" />
+    <None Include="Resources\CancelClicked.png" />
+    <None Include="Resources\Cancel.png" />
+    <EmbeddedResource Include="Resources\RecoveryLogo.png" />
+    <EmbeddedResource Include="Resources\Cydia.zip" />
+    <EmbeddedResource Include="Resources\Cydia_atv.zip" />
+    <None Include="Resources\dfuConnect.png" />
+    <None Include="Resources\dfuOneButton01.png" />
+    <None Include="Resources\dfuOneButton02.png" />
+    <None Include="Resources\dfuOneButton03.png" />
+    <None Include="Resources\dfuOneButton04.png" />
+    <None Include="Resources\dfuOneButton05.png" />
+    <None Include="Resources\dfuOneButton06.png" />
+    <None Include="Resources\dfuOneButton07.png" />
+    <None Include="Resources\dfuOneButton08.png" />
+    <None Include="Resources\dfuOneButton09.png" />
+    <None Include="Resources\dfuOneButton10.png" />
+    <None Include="Resources\dfuPrepare.png" />
+    <None Include="Resources\dfuPrepare01.png" />
+    <None Include="Resources\dfuPrepare02.png" />
+    <None Include="Resources\dfuPrepare03.png" />
+    <None Include="Resources\dfuPrepare04.png" />
+    <None Include="Resources\dfuPrepare05.png" />
+    <None Include="Resources\dfuPressTwoButtons.png" />
+    <None Include="Resources\dfuRelease.png" />
+    <None Include="Resources\dfuSuccess.png" />
+    <None Include="Resources\dfuTurnOff.png" />
+    <None Include="Resources\dfuTwoButtons01.png" />
+    <None Include="Resources\dfuTwoButtons02.png" />
+    <None Include="Resources\dfuTwoButtons03.png" />
+    <None Include="Resources\dfuTwoButtons04.png" />
+    <None Include="Resources\dfuTwoButtons05.png" />
+    <None Include="Resources\dfuTwoButtons06.png" />
+    <None Include="Resources\dfuTwoButtons07.png" />
+    <None Include="Resources\dfuTwoButtons08.png" />
+    <None Include="Resources\dfuTwoButtons09.png" />
+    <None Include="Resources\dfuTwoButtons10.png" />
+    <EmbeddedResource Include="Resources\iPad1,1_4.3.1_8G4.bundle.zip" />
+    <EmbeddedResource Include="Resources\iPod4,1_4.3.1_8G4.bundle.zip" />
+    <EmbeddedResource Include="Resources\iPod3,1_4.3.1_8G4.bundle.zip" />
+    <EmbeddedResource Include="Resources\iPhone3,1_4.3.1_8G4.bundle.zip" />
+    <EmbeddedResource Include="Resources\iPhone2,1_4.3.1_8G4.bundle.zip" />
+    <None Include="Resources\mainbord.jpg" />
+    <None Include="Resources\backg1.jpg" />
+    <None Include="Resources\backg2.jpg" />
+    <None Include="Resources\GPL_button_black.jpg" />
+    <None Include="Resources\GPL_button_over.png" />
+    <EmbeddedResource Include="Resources\sn0w.img3" />
+    <EmbeddedResource Include="Resources\OpenSSH.zip" />
+    <EmbeddedResource Include="Resources\rawr.img3" />
+    <EmbeddedResource Include="Resources\pie" />
+    <None Include="Resources\start_button_black.png" />
+    <None Include="Resources\start_button_over.png" />
+    <None Include="Resources\2di4kfo.gif" />
+    <None Include="Resources\adsfdsfsd.png" />
+    <None Include="Resources\attena-fixed.gif" />
+    <EmbeddedResource Include="Resources\wait.img3" />
+    <None Include="Resources\dfutwobuttons11.png" />
+    <None Include="Resources\dfutwobuttons12.png" />
+    <None Include="Resources\dfutwobuttons13.png" />
+    <None Include="Resources\dfutwobuttons14.png" />
+    <None Include="Resources\dfutwobuttons15.png" />
+    <None Include="Resources\dfutwobuttons16.png" />
+    <None Include="Resources\dfutwobuttons17.png" />
+    <None Include="Resources\dfutwobuttons18.png" />
+    <None Include="Resources\dfutwobuttons19.png" />
+    <None Include="Resources\dfutwobuttons20.png" />
+    <None Include="Resources\dfutwobuttons21.png" />
+    <None Include="Resources\dfutwobuttons22.png" />
+    <None Include="Resources\dfutwobuttons23.png" />
+    <None Include="Resources\dfutwobuttons24.png" />
+    <None Include="Resources\dfutwobuttons25.png" />
+    <None Include="Resources\dfutwobuttons26.png" />
+    <None Include="Resources\dfutwobuttons27.png" />
+    <None Include="Resources\dfutwobuttons28.png" />
+    <None Include="Resources\dfutwobuttons29.png" />
+    <None Include="Resources\dfutwobuttons30.png" />
+    <None Include="Resources\i4.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\ipad.png" />
+    <None Include="Resources\atv2.png" />
+    <None Include="Resources\Backing.jpg" />
+    <None Include="Resources\blankbacking.jpg" />
+    <None Include="Resources\expertm.png" />
+    <None Include="Resources\basebandmode.png" />
+    <None Include="Resources\runningireb.jpg" />
+    <None Include="Resources\ipt4.png" />
+    <None Include="Resources\redhover.jpg" />
+    <None Include="Resources\simplem.png" />
+    <EmbeddedResource Include="Resources\pacman.html" />
+    <EmbeddedResource Include="Resources\pacman.swf" />
+    <EmbeddedResource Include="Resources\s-irecovery.exe" />
+    <EmbeddedResource Include="Resources\iBooty.exe" />
+    <EmbeddedResource Include="Resources\dl-bb.exe" />
+    <EmbeddedResource Include="Resources\msvcr100d.dll" />
+    <None Include="Resources\unicorn_rainbow1.jpg" />
+    <None Include="Resources\connectatv2.gif" />
+    <None Include="Resources\remote_both.png" />
+    <None Include="Resources\remote_self.png" />
+    <EmbeddedResource Include="Resources\youtube.tar" />
+    <Content Include="Snowflake.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
