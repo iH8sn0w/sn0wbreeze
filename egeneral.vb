@@ -21,6 +21,10 @@
         PartitionsizeBar.Maximum = 7000
         Label3.Text = RootFSsize.ToString
         TextRoot.Text = RootFSsize
+        If ModelVar = "n92ap" Then
+            'Hide Enable Gestures...
+            CheckBox1.Visible = False
+        End If
         If iPhoneModel = "iPad" Or iPhoneModel = "Apple TV 2" Then
             Hacktivate.Checked = False
             ActivatePhone = False

@@ -42,9 +42,9 @@ Public Class IdentifyIPSW
     Private Sub get_md5_RunWorkerCompleted(ByVal sender As Object, ByVal e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles get_MD5.RunWorkerCompleted
         MDIMain.MenuStrip1.Enabled = True
         Back.Enabled = True
-        If ipswhash = "694c93b5b608513136ba8956dff28ba7" Then
-            IPSWVersion = "4.3.1"
-            IPSWvers.Text = "4.3.1 (8G4) IPSW Verified!"
+        If ipswhash = "7c1c714f24a89c2f2c71e26d37cde3f0" Then
+            IPSWVersion = "4.3.2"
+            IPSWvers.Text = "4.3.2 (8H7) IPSW Verified!"
             ihelper.Text = "iPhone 3GS"
             ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
             iPhoneModel = "iPhone 3GS"
@@ -61,10 +61,11 @@ Public Class IdentifyIPSW
             RootFSsize = 850
             iDevWarn.MdiParent = MDIMain
             iDevWarn.Show()
-        ElseIf ipswhash = "32f9a71430c4dd025adab3b73d4a5242" Then
-            IPSWVersion = "4.3.1"
-            IPSWvers.Text = "4.3.1 (8G4) IPSW Verified!"
+        ElseIf ipswhash = "8cb3a9964a2a99414030f662d3009deb" Then
+            IPSWVersion = "4.3.2"
+            IPSWvers.Text = "4.3.2 (8H7) IPSW Verified!"
             ihelper.Text = "iPhone 4"
+            ModelVar = "n90ap"
             ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
             iPhoneModel = "iPhone 4"
             Status.Show()
@@ -80,10 +81,31 @@ Public Class IdentifyIPSW
             Usepod2gsAwesomeKernelExploit = False
             'iDevWARN.Show()
             'iDevWARN.BringToFront()
-            RootFSsize = 1050
-        ElseIf ipswhash = "47827ca8d127f28663d5b70b0784236e" Then
-            IPSWVersion = "4.3.1"
-            IPSWvers.Text = "4.3.1 (8G4) IPSW Verified!"
+            RootFSsize = 950
+        ElseIf ipswhash = "30fc03783453d23aaa0d13f89fd36c28" Then
+            IPSWVersion = "4.2.7"
+            IPSWvers.Text = "4.2.7 (8E303) IPSW Verified!"
+            ihelper.Text = "iPhone 4 (Verizon)"
+            ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
+            iPhoneModel = "iPhone 4"
+            ModelVar = "n92ap"
+            Status.Show()
+            Status.Image = My.Resources.reflectionImage2
+            statuslabelgood.Show()
+            Statuslabelbad.Hide()
+            Button1.Enabled = False
+            Button1.Text = "Done!"
+            arrow.Image = My.Resources.Arrow
+            arrow.Enabled = True
+            iBootyMethod = True
+            PictureBox1.Image = My.Resources.i4
+            Usepod2gsAwesomeKernelExploit = False
+            'iDevWARN.Show()
+            'iDevWARN.BringToFront()
+            RootFSsize = 950
+        ElseIf ipswhash = "7f831b30d33f80c7f92442cb041227ab" Then
+            IPSWVersion = "4.3.2"
+            IPSWvers.Text = "4.3.2 (8H7) IPSW Verified!"
             ihelper.Text = "iPod Touch 3G"
             ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
             iPhoneModel = "iPod Touch 3G"
@@ -100,9 +122,9 @@ Public Class IdentifyIPSW
             'iDevWARN.Show()
             'iDevWARN.BringToFront()
             RootFSsize = 850
-        ElseIf ipswhash = "b0e356267a1407e4d7a7b0f48a07c5c2" Then
-            IPSWVersion = "4.3.1"
-            IPSWvers.Text = "4.3.1 (8G4) IPSW Verified!"
+        ElseIf ipswhash = "4a002a4596a681efd9cdbf6f2fd72e74" Then
+            IPSWVersion = "4.3.2"
+            IPSWvers.Text = "4.3.2 (8H7) IPSW Verified!"
             ihelper.Text = "iPod Touch 4"
             ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
             iPhoneModel = "iPod Touch 4"
@@ -119,9 +141,9 @@ Public Class IdentifyIPSW
             'iDevWARN.Show()
             'iDevWARN.BringToFront()
             RootFSsize = 930
-        ElseIf ipswhash = "fe4f80f8ff2fa298559b392b64e84bb8" Then
-            IPSWVersion = "4.3.1"
-            IPSWvers.Text = "4.3.1 (8G4) IPSW Verified!"
+        ElseIf ipswhash = "24027c4381a6cdfdd8a03a17177d1d6c" Then
+            IPSWVersion = "4.3.2"
+            IPSWvers.Text = "4.3.2 (8H7) IPSW Verified!"
             ihelper.Text = "iPad"
             ihelper.Left = (Me.Width / 2) - (ihelper.Width / 2)
             iPhoneModel = "iPad"

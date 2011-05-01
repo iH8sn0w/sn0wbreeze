@@ -1,6 +1,6 @@
 ﻿Public Class Check4Updates
     Public SiteVersion As String = ""
-    Public sn0wbreezeVersion As String = "2.5.1"
+    Public sn0wbreezeVersion As String = "2.6.1"
     Private Sub Check4Updates_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         PictureBox1.Visible = True
         Label1.Visible = False
@@ -75,5 +75,4 @@ RichTextBoxStreamType.PlainText)
         Form1.Enabled = True
         Me.Dispose()
     End Sub
-
 End Class

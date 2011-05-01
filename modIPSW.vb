@@ -95,23 +95,23 @@ Module modIPSW
     Public WeNeedDeviceTree As Boolean = False
     Public Sub GetIPSWVars()
         If iPhoneModel = "iPad" Then
-            Bundle = "iPad1,1_4.3.1_8G4.bundle"
+            Bundle = "iPad1,1_4.3.2_8H7.bundle"
             Kernel = "s5l8930x"
             ModelVar = "k48ap"
             Board = "k48"
-            RootFS = "038-0936-003"
-            RootFSKey = "c309657d0abe1b66b4be046bb4b03fb540741f9cbc1e49951cf21e11332d9b0b66afd31e"
-            Ramdisk = "038-0902-005"
+            RootFS = "038-1024-007"
+            RootFSKey = "25c0b2a27afd23b9ddc9555a28ba8e77548e62d9e2ef56700bc40d22b2c50416aee9313c"
+            Ramdisk = "038-1035-007"
             RamdiskIV = ""
             RamdiskKey = ""
-            iBootkIV = "8dd515b2122e2ebeea4706c4810a0702"
-            iBootKey = "daf03075a4e7efdb1f4972dd7892f18941883aebfdf040998e8b6a13c09eaaf9"
+            iBootkIV = ""
+            iBootKey = ""
             iBECIV = ""
             iBECKey = ""
-            iBSSIV = "815f744558bb65d991dd1dd2502301b2"
-            iBSSKey = "99f0194451de1ac1eb4a254dd843f89a9cae2537b130793bff2c5e16a5b2b851"
-            LLBIV = "63e6bc2e49892425f404cec964dfc1dd"
-            LLBKey = "a4a930cf62144f786f8509e6dbb6cf3f2e85808bdf4cbf66473bbe0088272caf"
+            iBSSIV = "de7258db01e653c6d8ffe0ab18a5a5c7"
+            iBSSKey = "6d0afca5d390a7e48399cd534c8fd7db5a3f8fd4361631f6dffca75fbafca6aa"
+            LLBIV = ""
+            LLBKey = ""
             batfullIV = ""
             batfullKey = ""
             applelogoIV = ""
@@ -120,26 +120,26 @@ Module modIPSW
             RecoveryModeKey = ""
             KernelCacheIV = ""
             KernelCacheKey = ""
-            Unwanted = "038-0894-005"
+            Unwanted = "038-1031-007"
             DoIDeleteBuildManifest = False
         ElseIf iPhoneModel = "iPod Touch 3G" Then
-            Bundle = "iPod3,1_4.3.1_8G4.bundle"
+            Bundle = "iPod3,1_4.3.2_8H7.bundle"
             Kernel = "s5l8922x"
             ModelVar = "n18ap"
             Board = "n18"
-            RootFS = "038-0939-003"
-            RootFSKey = "f466f8ab4e9accb91ed1098ebda56b27b5dd06ddc62485394a53eb77bf190afd80274c02"
-            Ramdisk = "038-0901-005"
+            RootFS = "038-1040-007"
+            RootFSKey = "7085a2976bd57eceedcbbe88a270e1a5028133c288b8afb122c2f886830a9a641daf8bd4"
+            Ramdisk = "038-1034-007"
             RamdiskIV = ""
             RamdiskKey = ""
-            iBootkIV = "99cf05ee5e0f29866535c1ada7dc6125"
-            iBootKey = "ffc79f1e2d86d46cc78bbba014cfcded3cbffa5eeca1489ec849b3fd3984630a"
+            iBootkIV = ""
+            iBootKey = ""
             iBECIV = ""
             iBECKey = ""
-            iBSSIV = "24bb9af0d82d9c22f864dcd408038d20"
-            iBSSKey = "1cacc4990ee4eca8a8ab800b00ab0951fd51c2b90bc8845c55101ce78665b52d"
-            LLBIV = "a644bf6685be61595ab549d554a4e7b5"
-            LLBKey = "b72ffc60b6ca4662245b06897b752de089f91472c97554992cfde88f4d672481"
+            iBSSIV = "a4ff016010ce6831cae2a7009113c16f"
+            iBSSKey = "f7e6576f69cbcefbe96939efa39600cada2e13d12a6372499eff67f0566b86d2"
+            LLBIV = ""
+            LLBKey = ""
             DeviceTreeIV = ""
             DeviceTreeKey = ""
             applelogoIV = ""
@@ -148,26 +148,26 @@ Module modIPSW
             RecoveryModeKey = ""
             KernelCacheIV = ""
             KernelCacheKey = ""
-            Unwanted = "038-0915-005"
+            Unwanted = "038-1039-007"
             DoIDeleteBuildManifest = False
         ElseIf iPhoneModel = "iPod Touch 4" Then
-            Bundle = "iPod4,1_4.3.1_8G4.bundle"
+            Bundle = "iPod4,1_4.3.2_8H7.bundle"
             Kernel = "s5l8930x"
             ModelVar = "n81ap"
             Board = "n81"
-            RootFS = "038-0886-005"
-            RootFSKey = "2cce34479eeb3701b3888f81c0465d2d98133af3a2761d0a82ad5074ca8efc1c5593eccb"
-            Ramdisk = "038-0902-005"
+            RootFS = "038-1023-007"
+            RootFSKey = "401b22ae26cca1aa2e119c17a6c389a1ba6aea0fbff4912000a77df953f010637b35d0ee"
+            Ramdisk = "038-1035-007"
             RamdiskIV = ""
             RamdiskKey = ""
-            iBootkIV = "7b689c33620b90a1272d1e08acc23c69"
-            iBootKey = "d4bca5fbb803ba03ebe634617ef32d654f4670ceb23db252b9ca30c8d626eeaf"
+            iBootkIV = ""
+            iBootKey = ""
             iBECIV = ""
             iBECKey = ""
-            iBSSIV = "28893e051476c5b321751a0f8ee7cff7"
-            iBSSKey = "826789656e0cf85bdc280b8e39490388c32b6c39004283624a6f3a6c69adef31"
-            LLBIV = "d09c043f3c7b338485bdc137e2a6990e"
-            LLBKey = "b2fbb2192bf28590374179fcf1ca1a70d3a4966eb49e997e0a8ea88bbeec1408"
+            iBSSIV = "682684c4247740ca26c6823e58a36cdf"
+            iBSSKey = "ac17ad4e4e65d5d988b28bde260ade08a7b3f284a22b03a386b53dd761b4ccb5"
+            LLBIV = ""
+            LLBKey = ""
             batfullIV = ""
             batfullKey = ""
             applelogoIV = ""
@@ -176,10 +176,10 @@ Module modIPSW
             RecoveryModeKey = ""
             KernelCacheIV = ""
             KernelCacheKey = ""
-            Unwanted = "038-0894-005"
+            Unwanted = "038-1031-007"
             DoIDeleteBuildManifest = False
         ElseIf iPhoneModel = "iPhone 3GS" Then
-            Bundle = "iPhone2,1_4.3.1_8G4.bundle"
+            Bundle = "iPhone2,1_4.3.2_8H7.bundle"
             Kernel = "s5l8920x"
             ModelVar = "n88ap"
             ICE2eepPath = "/usr/local/standalone/firmware/ICE2_05.16.02.eep"
@@ -187,56 +187,83 @@ Module modIPSW
             ICE2_iPad_eepPath = "/usr/local/standalone/firmware/ICE2_06.15.00.eep"
             ICE2_iPad_flsPath = "/usr/local/standalone/firmware/ICE2_06.15.00.fls"
             Board = "n88"
-            RootFS = "038-0935-003"
-            RootFSKey = "c338fb2858bd5dad4cfb073d4fab2fbed4a3f2d1541bc50d8443f3b18475cd1b62c25983"
-            Ramdisk = "038-0900-005"
+            RootFS = "038-1022-007"
+            RootFSKey = "69a370c1b64b35f692e87e866bcd460a98a10c56ed05055eb7c675f101894ea504f7bc46"
+            Ramdisk = "038-1033-007"
             RamdiskIV = ""
             RamdiskKey = ""
-            iBootkIV = "a165da014fd83765b9d4ddc2198e9586"
-            iBootKey = "18358b073a584af0959b9fdfb9a09450da5e4431510a896b9584bff34517a35b"
-            iBECIV = "62070c6c193a1ece1733ce05a391d253"
-            iBECKey = "533b7a7948bd969e4c9b9bb1206f0778ca9ccb9b4394bde3c41f79e286cbe5f6"
-            iBSSIV = "086c8a91cbda60d094e5f96c8a62c9bd"
-            iBSSKey = "795b5196dfcbe8aea9803154148c087d59a1659a0543c59d4bf7e2ff889b7ed7"
-            LLBIV = "372237d6c0f4e22d7639424f45b015f8"
-            LLBKey = "5eef2af8139abed0adec56802ecaedc7d10928b6aa0e1fdc607317584af61837"
+            iBootkIV = "096984dbafb19c1c708e5c7b1299f269"
+            iBootKey = "6d14c496a0fe42f49898b06c70dca353a6634f67003715830c0c45b6aa822cbc"
+            iBECIV = "0034860a2b91ffc9d09471d02f98d06d"
+            iBECKey = "124ddf2693a216e33a6645e3624ba4cbeda541e42aed603162fc4c49a6795abf"
+            iBSSIV = "181ee0b292538b2052dbd119770d7348"
+            iBSSKey = "f131471b406795abf7ae70617dd30968e5ad6b847b84a1671d5801c04fc07643"
+            LLBIV = "b889e456f735ee52858cca09df3c5909"
+            LLBKey = "d700547fd945b5be12ec74f578838c746093ff7317e09fff1c88039989d2f7e3"
             applelogoIV = ""
             applelogoKey = ""
             RecoveryModeIV = ""
             RecoveryModeKey = ""
             KernelCacheIV = ""
             KernelCacheKey = ""
-            Unwanted = "038-0893-005"
+            Unwanted = "038-1030-007"
             If This3GSisold = True Then
                 DoIDeleteBuildManifest = True
             Else
                 DoIDeleteBuildManifest = False
             End If
-        ElseIf iPhoneModel = "iPhone 4" Then
-            Bundle = "iPhone3,1_4.3.1_8G4.bundle"
+        ElseIf iPhoneModel = "iPhone 4" And ModelVar = "n90ap" Then
+            Bundle = "iPhone3,1_4.3.2_8H7.bundle"
             Kernel = "s5l8930x"
             ModelVar = "n90ap"
             Board = "n90"
-            RootFS = "038-0937-003"
-            RootFSKey = "f6331068497fa4741e135329c399f69b3c109854835789cc6f23f759f333f5e7bbfcdde7"
-            Ramdisk = "038-0902-005"
+            RootFS = "038-1025-007"
+            RootFSKey = "30804cac61ba4df96999aa4e1ea3a2a18bfbe875534a66a0bb1add095e307a19a7176c82"
+            Ramdisk = "038-1035-007"
             RamdiskIV = ""
             RamdiskKey = ""
-            iBootkIV = "364555da0a1e4b95aeb666586fbf310b"
-            iBootKey = "d89fc90e1d53a890da972453c6c817348957732f499edad25041022c95e3344a"
+            iBootkIV = ""
+            iBootKey = ""
             iBECIV = ""
             iBECKey = ""
-            iBSSIV = "a441763f051b5537aeefefedf3cf52c9"
-            iBSSKey = "bbf0968d5799f444aae52bdf9a2f9ae26d30d94e8de1f9867fba82da220fc852"
-            LLBIV = "7d387f144fdb7007e4d854df19a87c51"
-            LLBKey = "2d1193eb138d95c82e619314856471bd0e58554fff2fdd04d6a498306be79805"
+            iBSSIV = "cdd50b45ca1bac4f718d9eb23ce9f0a8"
+            iBSSKey = "8ef00005aa2c01ae409d55e330171589af79d76ac86639e76003835d5d82ffc4"
+            LLBIV = ""
+            LLBKey = ""
             applelogoIV = ""
             applelogoKey = ""
             RecoveryModeIV = ""
-           RecoveryModeKey = ""
+            RecoveryModeKey = ""
             KernelCacheIV = ""
             KernelCacheKey = ""
-            Unwanted = ""
+            Unwanted = "038-1031-007"
+            ScreenSize = "640x960"
+            DoIDeleteBuildManifest = False
+        ElseIf iPhoneModel = "iPhone 4" And ModelVar = "n92ap" Then
+            Bundle = "iPhone3,3_4.2.7_8E303.bundle"
+            Kernel = "s5l8930x"
+            ModelVar = "n92ap"
+            Board = "n92"
+            RootFS = "038-0970-004"
+            RootFSKey = "612f78042ddc5337ab1abecfb59a07e88ed3e80665a035ef02c3c48045057fc29ab0a4b5"
+            Ramdisk = "038-0974-004"
+            RamdiskIV = "8d612fbab555c8e8f548898b0e6d3cb0"
+            RamdiskKey = "9ca594fef56655a7ad4dc1312dc4a499851d832c2eeb86f5a9ebfabe08ccedb6"
+            iBootkIV = ""
+            iBootKey = ""
+            iBECIV = ""
+            iBECKey = ""
+            iBSSIV = "6863087c07128d170db61316205c5a45"
+            iBSSKey = "cabd9afa6d7678f3f95d0ccf43d18f54e4ee2e6ac8025b2a528f3b07579ec305"
+            LLBIV = ""
+            LLBKey = ""
+            applelogoIV = ""
+            applelogoKey = ""
+            RecoveryModeIV = ""
+            RecoveryModeKey = ""
+            KernelCacheIV = ""
+            KernelCacheKey = ""
+            Unwanted = "038-0971-004"
             ScreenSize = "640x960"
             DoIDeleteBuildManifest = False
         ElseIf iPhoneModel = "Apple TV 2" Then
@@ -396,7 +423,7 @@ Module modIPSW
     Public Sub DecryptRamdisk()
         Rename_File(tempPath & "\IPSW\" & Ramdisk & ".dmg", Ramdisk & ".dmg.orig")
 
-        If iPhoneModel = "Apple TV 2" Then
+        If iPhoneModel = "Apple TV 2" Or ModelVar = "n92ap" Then
             xpwntool(tempPath & "\IPSW\" & Ramdisk & ".dmg.orig", tempPath & "\IPSW\ramdisk_decrypted.dmg", RamdiskIV, RamdiskKey)
         Else
             xpwntool_nokeys(tempPath & "\IPSW\" & Ramdisk & ".dmg.orig", tempPath & "\IPSW\ramdisk_decrypted.dmg")
@@ -452,7 +479,49 @@ Module modIPSW
     End Sub
     Public Sub AddUltimateness()
         'Moving original launchd...
-       
+        If ModelVar = "n92ap" Then
+            'Alright!!! Were going Verizon style. Slowly!!! ;D
+            '
+            'Moving that fucking piece of shit launchd.
+            hfsplus_mv(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "/sbin/punchd")
+            hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/punchd", "100755")
+            hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/punchd", "0", "80")
+            'Adding Kernel exploit (payload)...
+            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\kern_sploit", "/usr/lib/kern_sploit")
+            hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/kern_sploit", "100755")
+            hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/kern_sploit", "0", "80")
+            'Adding hfs overflow (AKA pod2g love)...
+            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\hfs_mdb", "/usr/lib/hfs_mdb")
+            hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/hfs_mdb", "100755")
+            hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/hfs_mdb", "0", "80")
+            'Add custom launchd...
+            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\launchd", "/sbin/launchd")
+            hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "104755")
+            'Add iBooks fix...
+            hfsplus_extract(tempPath & "\IPSW\DECRYPTED.dmg", "System/Library/LaunchDaemons/com.apple.fairplayd.N92.plist", tempPath & "\fairplay.plist.orig")
+            bspatch(tempPath & "\fairplay.plist.orig", tempPath & "\fairplay.plist", tempPath & "\fairplayd.patch")
+            hfsplus_mv(tempPath & "\IPSW\DECRYPTED.dmg", "System/Library/LaunchDaemons/com.apple.fairplayd.N92.plist", "System/Library/LaunchDaemons/com.apple.fairplayd.N92.orig")
+            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\fairplay.plist", "System/Library/LaunchDaemons/com.apple.fairplayd.N92.plist")
+            'Add the dylib QUICK!!!!
+            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\hunnypot.dylib", "/usr/lib/hunnypot.dylib")
+            hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/hunnypot.dylib", "100755")
+            '
+            Delete_File(tempPath & "\fairplay.plist.orig")
+            Delete_File(tempPath & "\fairplay.plist")
+            If iWantzAnimate = True Then
+                'Adding animate...
+                SaveToDisk("animate", tempPath & "\animate")
+                SaveToDisk("animate.deb", tempPath & "\animate.deb")
+                'Adding Binary...
+                hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\animate", "/usr/bin/animate")
+                hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/bin/animate", "100755")
+                'Adding Deb...
+                hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\animate.deb", "/private/var/root/Media/Cydia/AutoInstall")
+            End If
+            'Done.
+            Exit Sub
+        End If
+
         If iWantzAnimate = True Then
             If iPhoneModel = "Apple TV 2" Then
                 hfsplus_mv(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "/sbin/crunchd")
@@ -462,40 +531,19 @@ Module modIPSW
         Else
             hfsplus_mv(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "/sbin/crunchd")
         End If
-   
+
         'Add custom launchd...
         hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\launchd", "/sbin/launchd")
         hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "104755")
-        'hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/sbin/launchd", "0", "80")
 
         If iPhoneModel = "Apple TV 2" Then
             'Ignore Me.
         Else
             Call Fix_animate()
         End If
-        Exit Sub
-        'Adding Kernel exploit...
-        hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\kern_sploit", "/usr/lib/kern_sploit")
-        hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/kern_sploit", "100755")
-        hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/kern_sploit", "0", "80")
-
-        'Adding hfs overflow...
-        hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\hfs_mdb", "/usr/lib/hfs_mdb")
-        hfsplus_chmod(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/hfs_mdb", "100755")
-        hfsplus_chown(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/lib/hfs_mdb", "0", "80")
-
-        If iWantzAnimate = True Then
-            'Adding animator...
-            SaveToDisk("animate.deb", tempPath & "\animate.deb")
-
-            hfsplus_mkdir(tempPath & "\IPSW\DECRYPTED.dmg", "/private/var/root/Media/Cydia/AutoInstall")
-
-            hfsplus_add(tempPath & "\IPSW\DECRYPTED.dmg", tempPath & "\animate.deb", "/private/var/root/Media/Cydia/AutoInstall/animate.deb")
-        End If
     End Sub
     Public Sub PatchRamdisk()
         hfsplus_grow(tempPath & "\IPSW\ramdisk_decrypted.dmg", "27500000")
-
 
         hfsplus_extract(tempPath & "\IPSW\ramdisk_decrypted.dmg", "/usr/sbin/asr", tempPath & "\asr.orig")
         hfsplus_mv(tempPath & "\IPSW\ramdisk_decrypted.dmg", "/usr/sbin/asr", "/usr/sbin/asr_orig")
@@ -688,7 +736,6 @@ Module modIPSW
         'Moar branding... (Hardcore style)
         hfsplus_chown(tempPath & "\IPSW\ramdisk_decrypted.dmg", ICE2eepPath, "0", "80")
         hfsplus_chown(tempPath & "\IPSW\ramdisk_decrypted.dmg", ICE2flsPath, "0", "80")
-        MsgBox("CHECK")
     End Sub
     Public Sub Fix_ultrasn0w()
         Exit Sub
@@ -776,6 +823,10 @@ Module modIPSW
         End If
     End Sub
     Public Sub HacktivatePhone()
+        If ModelVar = "n92ap" Then
+            'Sowwy verizon i4. no <3 for u.
+            Exit Sub
+        End If
         SaveToDisk("youtube.tar", tempPath & "\youtube.tar")
         '
         hfsplus_extract(tempPath & "\IPSW\DECRYPTED.dmg", "/usr/libexec/lockdownd", tempPath & "\lockdownd.orig")
@@ -825,7 +876,7 @@ Module modIPSW
             Delete_File(tempPath & "\N88AP.plist.orig")
             Delete_File(tempPath & "\N88AP.plist.pwned")
         End If
-        If iPhoneModel = "iPhone 4" Then
+        If iPhoneModel = "iPhone 4" And ModelVar = "n90ap" Then
             hfsplus_extract(tempPath & "\IPSW\DECRYPTED.dmg", "/System/Library/CoreServices/SpringBoard.app/N90AP.plist", tempPath & "\N90AP.plist.orig")
             hfsplus_mv(tempPath & "\IPSW\DECRYPTED.dmg", "/System/Library/CoreServices/SpringBoard.app/N90AP.plist", "/System/Library/CoreServices/SpringBoard/N90AP_orig.plist")
             bspatch(tempPath & "\N90AP.plist.orig", tempPath & "\N90AP.plist.pwned", tempPath & "\N90AP.patch")

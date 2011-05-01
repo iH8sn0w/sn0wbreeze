@@ -868,7 +868,7 @@ Public Class ebuilding
 
         ihelpertext = ihelper.Text
         'run in separate thread
-
+        MDIMain.MenuStrip1.Enabled = False
         ThreadPool.QueueUserWorkItem(AddressOf MakeItSn0w)
     End Sub
 

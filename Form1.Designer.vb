@@ -51,11 +51,11 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(170, 162)
+        Me.Label2.Location = New System.Drawing.Point(12, 162)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(496, 110)
+        Me.Label2.Size = New System.Drawing.Size(767, 110)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Version 2.5.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "For 4.3.1 [8G4/8F202]" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Version 2.6.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "For 4.2.7/4.3.2 [8E303/8H7/8F202]"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'WebBrowser1

@@ -11,6 +11,7 @@
         PreviousModel = ModelVar
         'Store this for DFU Helper -- END
         'Clear old registers
+        MDIMain.MenuStrip1.Enabled = True
         iPod2GModel = ""
         'End
         ipswFailed = False
